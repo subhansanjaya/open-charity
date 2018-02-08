@@ -1,0 +1,25 @@
+name = Open Charity
+description = A custom theme for Open Charity
+package = Core
+version = 1.0
+core = 7.x
+
+stylesheets[all][] = assets/css/slicknav.min.css
+stylesheets[all][] = assets/css/style.css
+
+
+scripts[] = assets/js/jquery.slicknav.js
+scripts[] = assets/js/custom.js
+
+regions[header] = Header
+regions[main_menu] = Main menu
+regions[sidebar_first] = Side bar
+regions[banner] = Banner
+regions[intro] = Intro
+regions[event] = Event
+regions[content] = Content
+regions[involve] = Involve
+regions[mission] = Mission
+regions[our_members] = Our members
+regions[blog_carousel] = Blog carousel
+regions[footer] = Footer

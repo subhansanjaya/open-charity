@@ -1,0 +1,736 @@
+@import url("../fontawesome/web-fonts-with-css/css/fontawesome-all.min.css");
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: url(../fonts/museosans500.eot);
+  src: url(../fonts/museosans500.eot?#iefix) format("embedded-opentype"), url(../fonts/museosans500.woff) format("woff"), url(../fonts/museosans500.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Museo Sans W01 Rounded 300";
+  src: url(../fonts/MuseoSansRounded300.eot);
+  src: url(../fonts/MuseoSansRounded300.eot?#iefix) format("embedded-opentype"), url(../fonts/MuseoSansRounded300.woff) format("woff"), url(../fonts/MuseoSansRounded300.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Museo Sans W01 Rounded 300";
+  src: url(../fonts/MuseoSansRounded300.eot);
+  src: url(../fonts/MuseoSansRounded300.eot?#iefix) format("embedded-opentype"), url(../fonts/MuseoSansRounded300.woff) format("woff"), url(../fonts/MuseoSansRounded300.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Museo Sans W01 Rounded 500";
+  src: url(../fonts/MuseoSansRounded500.eot);
+  src: url(../fonts/MuseoSansRounded500.eot?#iefix) format("embedded-opentype"), url(../fonts/MuseoSansRounded500.woff) format("woff"), url(../fonts/MuseoSansRounded500.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+/* default variables */
+/* general */
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+a {
+  color: #5fc0c3;
+  text-decoration: none; }
+  a:hover {
+    color: #57c0d5; }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  color: #575656; }
+
+h2 {
+  font-size: 1.625rem;
+  font-family: "Museo Sans 500";
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.625rem;
+  text-align: center; }
+
+h3 {
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  font-family: "Museo Sans 500"; }
+
+p {
+  color: #575656;
+  margin: 0; }
+
+.text-center {
+  text-align: center; }
+
+.clearfix {
+  clear: both; }
+
+.clearfix:after {
+  clear: both;
+  display: block; }
+
+.row {
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem; }
+
+.container {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* header */
+header {
+  background-color: #fff;
+  z-index: 10;
+  height: 5rem; }
+
+header .container {
+  height: 100%;
+  display: table; }
+
+.header__logo {
+  display: table-cell;
+  vertical-align: middle;
+  width: 9.625rem;
+  height: auto; }
+
+.header__logo img {
+  height: auto;
+  max-width: 100%;
+  width: 9.625rem; }
+
+.header__navigation {
+  display: table-cell;
+  vertical-align: middle; }
+
+.region-main-menu {
+  float: right; }
+
+.menu {
+  display: table;
+  margin: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
+
+.menu li {
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+  font-family: "Museo Sans 500";
+  padding-top: 0; }
+  .menu li a {
+    color: #575656; }
+    .menu li a:hover {
+      color: #5fc0c3; }
+
+.menu li.leaf {
+  list-style: none;
+  padding-right: 32px; }
+
+.menu li.last {
+  margin: 0;
+  padding-right: 0px; }
+
+.menu li.last a {
+  -webkit-border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  -ms-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  color: #61c0bd;
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #61c0bd;
+  padding: .6875rem 1.5625rem .625rem;
+  font-family: "Museo Sans 500";
+  text-transform: uppercase; }
+
+/* banner */
+#banner {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: 5rem; }
+
+.bg {
+  background-color: blue;
+  background: url(../images/hero.jpg) center no-repeat; }
+
+#banner .content {
+  max-width: 37.125rem;
+  margin: auto; }
+
+#banner h2 {
+  color: #fff;
+  font-size: 3.4375rem;
+  line-height: 3.125rem;
+  font-family: "Museo Sans W01 Rounded 300";
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.intro {
+  padding-bottom: 4.0625rem;
+  padding-top: 3.4375rem; }
+
+#banner p:nth-child(1) {
+  font-size: 17px;
+  line-height: 35px; }
+
+#banner p:nth-child(2) {
+  line-height: 1.5rem; }
+
+#banner p:nth-child(3) {
+  font-size: 1.0625rem;
+  line-height: 2.1875rem; }
+
+.intro p {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  margin-top: 1.375rem; }
+
+.intro p, h1 {
+  text-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.15); }
+
+/* events */
+#events {
+  background: #f1f2f5;
+  padding-top: 1.8125rem;
+  padding-bottom: 1.8125rem;
+  width: 100%; }
+
+#events .container {
+  display: table; }
+
+#events h3 {
+  color: #61c0bd; }
+
+#events span:first-child {
+  color: #53c0d6; }
+
+#events span {
+  font-family: "Museo Sans 500";
+  font-size: 1.0625rem;
+  color: #575656; }
+
+#events p {
+  margin: 0;
+  line-height: 1.5rem;
+  color: #575656; }
+
+#events .views-row {
+  width: 100%;
+  display: table; }
+
+#events .views-row div:first-child {
+  display: table-cell;
+  vertical-align: middle;
+  width: 90%;
+  width: auto; }
+
+#events .views-row div:last-child {
+  display: table-cell;
+  vertical-align: middle;
+  width: 10%;
+  line-height: 1.5rem; }
+
+.register_event a {
+  border-style: solid;
+  border-width: 1px;
+  background: #61c0bd;
+  border-color: #61c0bd;
+  border-radius: 2px;
+  font-size: 14px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  line-height: normal;
+  padding-right: 20px;
+  font-family: "Museo Sans 500";
+  text-transform: uppercase;
+  color: #fff; }
+
+/* involve */
+.involve .views-field-body .field-content {
+  min-height: 3.25rem;
+  margin-bottom: 1.5625rem; }
+
+.involve .views-field-field-link .field-content {
+  line-height: normal; }
+
+.involve .field-content a {
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  font-size: .875rem;
+  display: inline-block;
+  padding: .6875rem 1.5625rem .625rem;
+  text-transform: uppercase;
+  font-family: "Museo Sans 500";
+  color: #61c0bd;
+  width: 12.9375rem;
+  width: 12.9375rem;
+  max-width: 100%; }
+
+.involve .field-content a, .main-menu .menu li.last a {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #61c0bd; }
+
+.involve .content {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center; }
+
+#involve .views-field-field-get-involved-image {
+  height: 8.125rem;
+  display: table;
+  margin: auto; }
+
+#involve .views-field-field-get-involved-image .field-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+#involve img {
+  width: 7.625rem;
+  height: auto; }
+
+#involve .views-row {
+  width: 33%;
+  float: left; }
+
+.involve .field-title {
+  padding-top: .75rem; }
+
+.involve .field-description {
+  line-height: 1.375rem;
+  line-height: 1.375rem; }
+
+.involve .field-link {
+  margin: 1.5rem 0; }
+
+.involve .field-link a {
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  font-size: .875rem;
+  display: inline-block;
+  padding: .6875rem 1.5625rem .625rem;
+  color: #61c0bd;
+  width: 12.9375rem;
+  width: 12.9375rem;
+  max-width: 100%; }
+
+.involve .field-link a, .menu li.last a {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #61c0bd; }
+
+/* mission */
+.mission {
+  background: #f1f2f5; }
+
+#mission .content {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center; }
+
+.slick__slider {
+  padding-right: 1.25rem;
+  margin: auto;
+  padding-left: 1.25rem; }
+
+.slick-dots li.slick-active button {
+  background-color: #61c0bd; }
+
+.slick-dots li {
+  height: auto;
+  width: auto; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer; }
+
+input {
+  width: 100%; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #61c0bd;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  color: #fff;
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #61c0bd;
+  padding: .6875rem 1.5625rem .625rem;
+  font-family: "Museo Sans 500";
+  text-transform: uppercase;
+  background: #61c0bd; }
+
+.slick-dots li button {
+  border: 0;
+  background: 0 0;
+  display: block;
+  outline: 0;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer; }
+
+.slick-dots li button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  height: 10px;
+  height: .625rem;
+  width: 10px;
+  width: .625rem;
+  background-color: #989eac; }
+
+#mission .views-row {
+  width: 32%;
+  float: left;
+  /* max-width: 21.875rem; */
+  margin-right: 2%; }
+
+#mission .views-row:last-child {
+  margin: 0%; }
+
+.view-our-mission .view-content {
+  margin: auto; }
+
+.view-our-mission .view-content:after {
+  clear: both;
+  display: block; }
+
+.views-field .views-field-title {
+  background: white; }
+
+.views-field .views-field-body {
+  background: white; }
+
+.views-field-field-mission-image {
+  margin: auto;
+  background-color: white;
+  border-top-left-radius: 5.625rem;
+  border-top-right-radius: 5.625rem;
+  position: relative;
+  text-align: center;
+  height: 2.8125rem;
+  width: 5.625rem; }
+
+.views-field-field-mission-image .field-content {
+  width: 5.625rem;
+  height: 3.125rem;
+  margin: auto;
+  position: absolute;
+  margin-top: 0.625rem; }
+
+.views-field-field-mission-image .field-content img {
+  width: 4.375rem;
+  height: 4.375rem; }
+
+.region-our-members .slide__content {
+  height: 5rem;
+  position: relative; }
+
+.region-our-members img {
+  max-width: 9rem;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  width: auto; }
+
+.view-our-mission .views-field-title {
+  padding-top: 15%; }
+
+.view-our-mission .views-field-title, .view-our-mission .views-field-body {
+  background: white; }
+
+.view-our-mission .field-title {
+  margin-top: .375rem;
+  margin-bottom: .875rem; }
+
+.view-our-mission .field-body {
+  line-height: 1.4375rem; }
+
+/* blog */
+.blog {
+  background: #fff; }
+
+.slide__grid {
+  display: inline; }
+
+/* block */
+.involve, .mission, .blog {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem; }
+  .involve p, .mission p, .blog p {
+    font-size: 0.875rem;
+    color: #5b6172;
+    margin: 0;
+    line-height: 1.4375rem; }
+
+.page-content {
+  margin-bottom: 1.75rem; }
+  .page-content p {
+    font-size: 0.875rem;
+    color: #5b6172;
+    margin: 0;
+    line-height: 1.4375rem; }
+
+#block-views-our-mission-block {
+  margin-top: 2.8125rem;
+  margin-bottom: 2.8125rem;
+  padding-bottom: 2.8125rem;
+  border-bottom: 0.0625rem solid #d9dadd; }
+
+#mission a {
+  font-size: 1.0625rem;
+  font-family: "Museo Sans 500";
+  color: #57c0d5; }
+
+.view-our-mission .views-field-body {
+  padding-bottom: 35px; }
+
+.slick-prev {
+  color: #61c0bd;
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
+  left: -0; }
+
+.slick-next {
+  color: #61c0bd;
+  font-size: 1.875rem;
+  right: -0; }
+
+#blog {
+  position: relative; }
+
+.slick-next, .slick-prev {
+  z-index: 250;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  bottom: 32%;
+  z-index: 4; }
+
+#mission .views-field-body {
+  padding-top: 0.5rem;
+  padding-left: 1.375rem;
+  padding-right: 1.375rem; }
+
+/* page */
+.page-content {
+  margin-top: 5rem; }
+
+.page-content h2 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 1.0625rem; }
+
+/* blog carousel */
+.slick {
+  font-family: "Open Sans", sans-serif;
+  color: #5b6172; }
+
+.slide__content {
+  padding: 3%; }
+
+.slick a {
+  font-size: 0.875rem; }
+
+.slick .field-content p {
+  border-top: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  line-height: 1.4375rem; }
+
+.views-field-created {
+  float: left; }
+
+/* footer */
+footer {
+  background: #454850;
+  color: #979eb1;
+  padding-top: 1.5625rem;
+  padding-bottom: 0.9375rem;
+  text-align: center; }
+  footer .social-links {
+    text-align: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid #585b61;
+    box-shadow: 0 -0.0625rem 0 #4a4e57 inset;
+    margin-bottom: 0.75rem; }
+    footer .social-links li {
+      display: inline-block;
+      font-size: 1.25rem;
+      margin: 0 0.625rem 0.625rem; }
+  footer a:hover {
+    color: #fff; }
+  footer .footer__element {
+    font-size: 0.875rem; }
+  footer .block:last-child {
+    padding-top: 1.5625rem;
+    margin-top: 1.5625rem;
+    border-top: 0.0625rem solid #575b64;
+    margin-bottom: 1.5625rem; }
+  footer .block:last-child p {
+    color: #979eb1; }
+  footer .block-addtoany a {
+    color: #5dc0c9;
+    margin-left: 1.5625rem;
+    font-size: 1rem; }
+  footer .addtoany_list.a2a_kit_size_32 > a {
+    font-size: 1rem; }
+
+/* slick menu */
+.slicknav_menu {
+  display: none; }
+
+.js .slicknav_menu {
+  display: none; }
+
+.slicknav_menu {
+  background: #fff; }
+
+.slicknav_nav a {
+  text-decoration: none;
+  color: #000;
+  text-align: center; }
+
+.slicknav_nav a:hover {
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  border-radius: 0;
+  background: #fff;
+  color: #53c0d6; }
+
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #53c0d6; }
+
+.slicknav_btn {
+  background-color: #fff; }
+
+.slicknav_btn {
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid; }
+
+/* media queries */
+@media (min-width: 48rem) {
+  .container {
+    width: 750px; } }
+@media (min-width: 62rem) {
+  .container {
+    width: 970px; } }
+@media (min-width: 75rem) {
+  .container {
+    width: 1170px; } }
+@media screen and (max-width: 62rem) {
+  /* slick menu */
+  .js .menu {
+    display: none; }
+
+  .js .slicknav_menu {
+    display: block; }
+
+  /* header */
+  header {
+    height: auto;
+    min-height: 5rem;
+    position: relative; }
+    header .container {
+      width: 100%; }
+
+  .header__navigation {
+    padding-top: 1rem;
+    display: block;
+    float: none; }
+
+  header .container {
+    display: block; }
+
+  .header__logo {
+    padding-top: 1.75rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+    display: block;
+    float: left; }
+
+  .region-main-menu {
+    float: none; }
+
+  /* event */
+  #events .views-row div:first-child {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+    padding: 5%;
+    width: auto; }
+
+  /* involve */
+  #involve .views-row {
+    width: 100%;
+    padding: 2%;
+    float: none;
+    clear: both;
+    margin-left: auto; }
+
+  /* mission */
+  #mission .views-row {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 5%; } }
+
+/*# sourceMappingURL=style.css.map */
